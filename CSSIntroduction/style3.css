@@ -1,0 +1,17 @@
+#prvi {
+    color: darkturquoise;
+    opacity: 0.5;
+}
+#drugi {
+    color: rgba(0, 206, 209, 0.5)
+}
+#treci {color:#00ced1}
+.red1 {color: aliceblue}
+.red2 {color: hotpink}
+
+.prvak, .trecak, .petak {
+    background-color: blueviolet
+}
+.drugak, .cetvrtak {
+    background-color: burlywood
+}
