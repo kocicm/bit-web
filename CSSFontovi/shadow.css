@@ -1,0 +1,12 @@
+body {
+    font-size: 3em;
+}
+a { 
+    color: darkred;
+    /*text-shadow: 1px 3px 0px rgba(0, 255, 0, 0.72);*/}
+a:visited{
+    color: black;}
+a:hover { 
+    color: green;}
+a:active {
+    color: blue;}

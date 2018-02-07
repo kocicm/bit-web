@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("Lobster.otf");
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body { 
+    font-size: 25px;
+    font-weight: normal; 
+    color: darkblue}
+div {
+    font-family: 'Lobster'; 
+    font-weight: normal; 
+    font-style: normal; 
+    }
+
+.drugi {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;}
+#treci {
+    
+    font-family: 'Montserrat', sans-serif;
+}
+q { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque}
+p > span {
+    font-weight: bold;
+    font-style: italic;
+    background-color: rosybrown;}
