@@ -1,0 +1,13 @@
+#first {
+    background-color: lightyellow;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+#second {
+    background-color: red;
+    width: 600px;
+    min-height: 200px;
+}

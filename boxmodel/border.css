@@ -1,0 +1,74 @@
+
+h1 {
+    width: 960px;
+    margin: 50px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: gray;
+    color: red;
+    text-align: center;
+    font-family: 'BioRhyme Expanded', serif;
+    -webkit-box-shadow: 13px 20px 25px 12px rgba(0,0,0,0.55);
+    -moz-box-shadow: 13px 20px 25px 12px rgba(0,0,0,0.55);
+    box-shadow: 13px 20px 25px 12px rgba(0,0,0,0.55);
+    border-radius: 5px;
+}
+
+p {
+    background-color: yellow;
+    border: 5px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.dashed_red { 
+   border-style: dashed;
+   border-color: red;
+   width:200px;
+   /*margin-left: 100px;*/
+   
+}
+.dashed_red:hover {
+    visibility: hidden;
+}
+
+.solid_green {
+    border-style: solid;
+    border-color: green;
+    /*padding-top: 3em;*/
+    width:400px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    visibility: hidden;
+}
+
+#margin_first{
+    width: 300px;
+   /* margin: 50px;*/
+    border-style: dashed;
+    border-color: red;
+}
+#circles {
+    list-style-type: circle;
+}
+
+#squares {
+    list-style-type: square;
+}
+
+#uper {
+    list-style-type: upper-alpha;
+}
+
+#roman {
+    list-style-type: upper-roman;
+}
+
+ul.star {
+    width: 200px;
+    list-style-image: url("https://www.cloudynights.com//public/style_images/master/star.png");
+}
+
+#image1 {   
+    list-style-position: inside;
+}
