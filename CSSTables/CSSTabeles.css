@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    min-width: 40%;
+}
+
+th {
+    background-color: red;
+    padding: 10px 0;
+    color: #FFF;
+}
+td{
+    padding: 10px 0;
+}
+img{
+    height: 100px;
+}
+
+tr:nth-child(2n+1){
+    background-color: #D3D3D3;
+}
+
+table>tr:hover{
+    background-color: yellow;
+}
