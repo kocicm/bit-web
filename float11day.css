@@ -1,0 +1,51 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+ul.head {
+    background-color: red;
+    color: white;
+    overflow: hidden;
+    height: 60px;
+}
+
+ul.head>li {
+    float: right;
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul.right {
+    list-style-type: none;
+    background-color: yellow;
+    width: 300px;
+    float: right;
+}
+
+div:first-of-type {
+    width: 960px;
+}
+
+img:first-of-type {
+    width: 100%
+}
+
+p>img{
+    width: 300px;
+}
+
+img.mali{
+    width: 300px;
+}
+
+p.mali{
+    width: 300px;
+}
+
+div.mali{
+    width: 31%;
+    float: left;
+    margin: 5px;
+}
