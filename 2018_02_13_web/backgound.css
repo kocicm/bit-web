@@ -1,0 +1,15 @@
+/* body {
+    background-image: url(https://wallpaperscraft.com/image/surface_network_light_background_texture_50497_1920x1200.jpg);
+    background-attachment: fixed;
+} */
+body {
+    /* background-image: url(https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     */
+     background: url(https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg) no-repeat right center;
+     background-attachment: fixed;
+    background-size: cover
+}
