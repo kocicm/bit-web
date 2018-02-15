@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 100%;
+}
+
+header>p {
+    padding: 50px;
+    color: white;
+    font-size: 200%;
+}
+
+header {
+    background-image: url(images/banner3.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(0, 121, 190);
+    color: white;
+    border-radius: 80px;
+    width: 200px;
+    height: 50px;
+    margin: 40px;
+    border: none;
+}
+
+span {
+    color: orange;
+    border-width: 5px 0 5px 5px;
+    border-style: solid;
+    border-color: grey;
+}
+
+header>h2 {
+    color: grey;
+    text-align: center;
+}
+
+#logo {
+    margin: 20px auto;
+    text-align: center;
+}
+
+nav li {
+    background-color: rgb(0, 121, 190);
+    color: white;
+    text-align: center;
+    padding: 1.5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    width: 80%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+section h1 {
+    text-align: center;
+    margin: 10%;
+}
+
+.who h3 {
+    color: rgb(0, 121, 190);
+    margin: 5%;
+    margin-left: 0;
+    text-align: left;
+}
+
+.who p {
+    margin-bottom: 5%;
+}
+
+.who li {
+    list-style-image: url(images/new.png);
+    list-style-position: inside;
+    padding: 5px;
+}
+
+.who img {
+    width: 100%;
+}
+
+.who ul {
+    margin-bottom: 15%;
+}
+
+.what img {
+    border-radius: 50%;
+    width: 70px;
+    padding: 1%;
+    border: 2px solid white;
+    margin: 3%;
+    float: left;
+}
+
+.what div {
+    background-color: rgb(0, 121, 190);
+    color: white;
+    margin-top: 3%;
+}
+
+.what p {
+    padding: 3%;
+    clear: left;
+}
+
+#pasus {
+    clear: left;
+}
+
+.what h4 {
+    padding: 10%;
+}
+
+.get {
+    width: 100%;
+}
+
+.get>div:nth-of-type(1) {
+    background-color: rgb(126, 219, 126);
+    text-align: center;
+}
+
+.get p {
+    padding: 2%;
+    color: white;
+}
+
+.get img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.get>div:nth-of-type(2) {
+    background-color: rgb(219, 126, 199);
+    text-align: center;
+}
+
+.get>div:nth-of-type(3) {
+    background-color: rgb(126, 155, 219);
+    text-align: center;
+}
+
+.get>div:nth-of-type(4) {
+    background-color: rgb(126, 193, 219);
+    text-align: center;
+}
+
+.get li {
+    display: inline-block;
+    padding: 2%;
+}
+
+#house {
+    width: 60%;
+}
+
+form {
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.mail {
+    width: 90%;
+}
+
+textarea {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#submit {
+    background-color: rgb(255, 192, 109);
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    float: left;
+    border: none;
+    margin: 5%;
+}
+
+footer li {
+    display: inline-block;
+    padding: 2%;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    margin: 5px auto;
+    text-align: center;
+    background-color: rgb(56, 56, 56)
+}
+
+@media only screen and (min-width: 768px){
+
+#logo h2{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: white;
+}
+
+span {
+    color: orange;
+    border-width: 5px 0 5px 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+
+nav li {
+    color: white;
+    background-color: inherit;
+    display: inline;
+    background-color: none;
+  
+}
+
+nav ul{
+    position: absolute;
+    right: 10px;
+    top:20px;
+}
+
+.who h3{
+    float: left;
+    width: 100%;
+}
+.who p{
+    float: left;
+    width: 50%;
+    clear: left;
+}
+.who ul{
+    float: left;
+    clear:left;
+    width: 50%;
+}
+
+.who img{
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    float: right;
+    width: 42%;
+    
+}
+
+.who{
+    overflow: hidden;
+}
+
+.what div{
+    float: left;
+    width: 45%;
+    margin: 2%;
+}
+
+.get{
+    overflow: hidden;
+}
+
+.get div{
+    float: left;
+    width: 50%;
+}
+
+iframe {
+    clear: both;
+    width: 100%;
+}
+
+.get div:last-of-type{
+    float: left;
+    width: 100%;
+}
+
+
+    
+}
