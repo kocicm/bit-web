@@ -264,7 +264,7 @@ footer {
     }
     .who img {
         position: absolute;
-        top: 55%;
+        top: 75%;
         right: 5%;
         float: right;
         width: 42%;
@@ -323,16 +323,45 @@ footer {
     }
     .who {
         width: 100%;
+        margin: 0 auto;
     }
     .who img {
         width: 30%;
         float: left;
+        position: inherit;
+        margin-left: 5%;
     }
     #dreamhome {
-        float: left;
+        float: right;
         width: 30% !important;
     }
-    #pasus {
-        width: 30% !important;
+    
+    .what div {
+        float: left;
+        width: 29%;
+        margin: 2%;
+    }
+
+    .get div {
+        float: left;
+        width: 25%;
+        height: 200px;
+        padding-top: 60px;
+    }
+
+    #whodiv{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .who p {
+        float: left;
+        width: 80%;
+        clear: left;
+    }
+    .who ul {
+        float: left;
+        clear: left;
+        width: 80%;
     }
 }
