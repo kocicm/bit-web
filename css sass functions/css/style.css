@@ -1,0 +1,61 @@
+.paragraph, p:nth-of-type(1), p:nth-of-type(2), p:nth-of-type(3) {
+  border: 5px solid;
+  padding: 20px; }
+
+p:nth-of-type(1) {
+  border-color: red;
+  width: 500px;
+  color: white; }
+
+p:nth-of-type(2) {
+  border-color: blue;
+  box-sizing: border-box;
+  width: 550px; }
+
+p:nth-of-type(3) {
+  border-color: green; }
+
+p:nth-of-type(1) {
+  font-size: 16px;
+  background-color: black; }
+
+p:nth-of-type(2) {
+  font-size: 18px;
+  background-color: red; }
+
+p:nth-of-type(3) {
+  font-size: 20px;
+  background-color: green; }
+
+p:nth-of-type(4) {
+  font-size: 22px;
+  background-color: blue; }
+
+ul {
+  clear: both;
+  list-style: none;
+  font-size: 25px; }
+
+a {
+  text-decoration: none; }
+  a:link {
+    background-color: green; }
+  a:visited {
+    background-color: orange; }
+  a:active {
+    background-color: yellow;
+    color: black; }
+  a.important {
+    font-weight: bold; }
+
+table {
+  border: 1px solid black;
+  font-size: 30px;
+  box-sizing: border-box; }
+  table td {
+    border: 2px solid red;
+    padding: 20px;
+    width: 160px;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */
