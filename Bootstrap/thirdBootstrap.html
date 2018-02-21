@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <style>
+        .col,
+        .col-8,
+        .col-6,
+        .col-12,
+        .col-4 {
+            border: 2px solid black;
+            margin: 10px 0;
+        }
+
+        #r1 {
+            background-color: yellow;
+        }
+
+        #r2 {
+            background-color: yellow;
+        }
+
+        #r3 {
+            background-color: yellow;
+
+        }
+
+        #r1c1 {
+            background-color: lightcyan;
+        }
+
+        #r1c2 {
+            background-color: lightgreen;
+        }
+
+        #r2c1 {
+            background-color: lightgrey;
+        }
+        #r2c2 {
+            background-color: lightsalmon;
+        }
+        #r2c3 {
+            background-color: lightskyblue;
+        }
+        #r3c1 {
+            background-color: lightgrey;
+        }
+        #r3c2 {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+        <div class="container-fluid">
+                <div id="r1" class="row">
+                    <div id="r1c1" class="col-sm-4">1</div>
+                    <div id="r1c2" class="col-sm-4">2</div>
+                </div>
+                <div id="r2" class="row">
+                    <div id="r2c1" class="col-sm-4">3</div>
+                    <div id="r2c2" class="col-sm-4 offset-3">4 offset 3</div>
+                </div>
+                <div id="r3" class="row">
+                    <div id="r3c1" class="col-sm-4 offset-sm-3 offset-lg-1">5</div>
+                    <div id="r3c2" class="col-sm-4 offset-sm-1">6</div>
+                </div>
+            </div>
+        
+</body>
+</html>
