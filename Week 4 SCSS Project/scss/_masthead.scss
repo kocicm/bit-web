@@ -1,5 +1,13 @@
-h1, h3 {
+h1 {
     text-align: center;
+    font-weight: 800;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    color: white;
 }
 
 .container-fluid{
@@ -12,4 +20,56 @@ h1, h3 {
 
 #masthead, #about {
     background: #18bc9c;
+}
+
+#navigacija button > span {
+    filter: invert(100%);
+}
+
+#navigacija, .header-row {
+    background: #2c3e50 !important;
+}
+
+a, button,{
+    color: white !important;
+
+}
+
+#about{
+    color: white;
+    text-align: left;
+    padding: 50px 0;
+    font-weight: bold;
+}
+
+#about button {
+border: white solid 2px;
+font-size: 0.8em;
+box-sizing: content-box;
+}
+
+#contact-me {
+    padding: 50px 0;
+}
+#contact-me button {
+    background: #18bc9c;
+    border: 0;
+    }
+#contact-me input, .form-control {
+    border: grey;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    resize: none;
+}
+
+footer  {
+
+    padding: 30px 0;
+}
+
+#black{
+    color: black !important;
+}
+
+#portfolio{
+    padding: 70px 0;
 }
