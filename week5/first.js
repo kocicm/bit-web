@@ -51,3 +51,26 @@ loc();
 // }
 
 // locStor('kljuc', 'vrednost');
+
+//////////////////// window methods  ////////////////////////////
+
+
+/*var goBack = function(a) {
+    history.go(a);
+}
+goBack(2);
+
+function boo() {
+    alert('esi mi dobar?');
+}
+setTimeout(boo, 2000);*/
+
+
+alert('Hello!');
+var answer = prompt('kako si?');
+if(confirm('We will submit this answer now! ' + answer)) {
+    alert('success');    
+}
+
+
+
