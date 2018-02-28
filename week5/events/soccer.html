@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="soccer.css">
+    <title>Soccer player</title>
+</head>
+
+<body>
+
+    <img src="player.png" alt="" id="play">
+    <input type="button" value="stop moving">
+
+    <script>
+
+        var player = document.querySelector('#play');
+
+
+       document.querySelector('body').onclick = function (event) {
+
+            var x = event.clientX;
+            var y = event.clientY;
+            document.querySelector('#play').style.left = x + "px"
+            document.querySelector('#play').style.top = y + "px"
+            
+        };
+
+    </script>
+</body>
+
+</html>

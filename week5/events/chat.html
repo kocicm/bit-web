@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="chat.css">
+    <title>chat</title>
+</head>
+
+<body>
+    <div></div>
+    <input type="text" id="id_of_textbox">
+
+    <input type="button" value="Send" id="send1">
+
+
+    <script>
+
+
+        document.querySelector("#send1").onclick = function () {
+            var item1 = document.querySelector("input:first-of-type").value;
+            var newEl = document.createElement('p');
+
+            // Create text node and store it in a variable
+            var newText = document.createTextNode(item1);
+
+            // Attach the text node to the element
+            newEl.appendChild(newText);
+
+            var smt = document.querySelector('div');
+
+            // append new element to the list
+            smt.appendChild(newEl);
+
+            document.querySelector("input:first-of-type").value="";
+        }
+
+        document.getElementById("id_of_textbox").onkeyup = 
+             function (event) {
+                
+                if (event.keyCode === 13) {
+                    document.getElementById("send1").click();
+                }
+                
+
+            };
+
+    </script>
+</body>
+
+</html>

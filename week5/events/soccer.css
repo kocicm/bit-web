@@ -1,0 +1,14 @@
+body{
+    background-image: url(./field.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    width: 150px;
+}
+input{
+position: absolute;
+right: 30px;
+bottom: 30px;
+background-color: tomato;
+}
