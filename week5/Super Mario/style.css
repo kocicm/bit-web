@@ -1,0 +1,16 @@
+body {
+    background: #0212fe url('img/bg.jpg') repeat-x left bottom;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    left: 45vw;
+    top: 66vh;
+    height: 256px;
+}
+
+#run {
+    display: none;
+}
+
