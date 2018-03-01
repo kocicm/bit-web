@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+
+form, div{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+input, select, button{
+    width: 100%;
+}
+
+#button, #button2, #button3{
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border: none;
+}
+
+p[id^=error] {
+    color: red;
+}
+
+input {
+    padding: 5px;
+    margin-top: 7px;
+}
+
+select {
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+li:nth-child(2n+2) {
+    background-color: lightgrey;
+}
+
+div>p:nth-child(4) {
+    text-align: right;
+}
