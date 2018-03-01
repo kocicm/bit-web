@@ -12,9 +12,8 @@ function runMario() {
 }
 
 function stopMario() {
-    document.querySelector('#stand').setAttribute('style', 'display: block');
-    document.querySelector('#run').setAttribute('style', 'display: none');
-    clearInterval(timer);
+     history.go(0)
+    
 }
 
 
