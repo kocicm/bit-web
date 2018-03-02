@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Lato;
+    src: url(font/Lato-Black.ttf);
+}
+
+* {
+    font-family: Lato, sans-serif;
+}
+
+h1, h2, #numOfPassed, #numOfFailed, #procent {
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-color: darkgray;
+    padding: 40px 0;
+}
+
+.result{
+    width: 320px;
+    margin: 3px auto;
+    padding-left: 10px;
+}
+
+h3, ul{
+    display: inline-block;
+}
+h3:nth-of-type(1){
+    width: 200px;
+}
+h3:nth-of-type(2){
+    width: 50px;
+}
+h3:nth-of-type(3){
+    width: 50px;
+}
+
+#passed {
+    background-color: seagreen;
+}
+
+#failed {
+    background-color: red;
+}
+
+form {
+    background-color: tan;
+    padding: 5px;
+    text-align: center;
+}
+
+input, select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+ul {
+    width: 300px;
+}

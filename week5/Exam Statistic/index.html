@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Exam statistic</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exam statistic</h1>
+        <h2>Total students:
+            <span>4</span>
+        </h2>
+        <div class="result" id="passed">
+            <h3>PASSED</h3>
+            <h3 id="numOfPassed">2</h3>
+        </div>
+        <div class="result" id="failed">
+            <h3>FAILED</h3>
+            <h3 id="numOfFailed">2</h3>
+            <h3 id="procent">50%</h3>
+        </div>
+    </header>
+
+    <form>
+        <select>
+            <option>Web</option>
+            <option>JavaScript</option>
+            <option>SPA</option>
+        </select>
+        <input type="text" placeholder="Name Surname" name="fullname">
+        <input type="number" name="grade">
+        <input type="button" value="ADD">
+    </form>
+
+    <ul>PASSED
+    </ul>
+    <ul>FAILED</ul>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
