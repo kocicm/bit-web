@@ -7,7 +7,7 @@
     font-family: Lato, sans-serif;
 }
 
-h1, h2, #numOfPassed, #numOfFailed, #procent {
+h1, h2, #numOfPassed, #numOfFailed, #percent {
     text-align: center;
     color: white;
 }
@@ -24,7 +24,7 @@ header{
 }
 
 h3, ul{
-    display: inline-block;
+    display: inline-table;
 }
 h3:nth-of-type(1){
     width: 200px;
@@ -59,4 +59,16 @@ input, select {
 
 ul {
     width: 300px;
+    list-style: none;
+}
+
+#error1{
+    color: red;
+    text-align: center;
+}
+li{
+    text-transform:capitalize;
+}
+#liFailed{
+    color: red;
 }
