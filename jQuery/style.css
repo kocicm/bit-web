@@ -1,0 +1,15 @@
+.bottomBorder {
+    border-bottom: 2px solid red;
+}
+
+.toUpperCase{
+    text-transform: uppercase;
+}
+
+.fontColor {
+    color: red;
+}
+
+.backgroundColor{
+    background-color: lightgray;
+}
