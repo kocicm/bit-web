@@ -1,76 +1,76 @@
-function Program(date) {
-    this.date = date;
-    this.movieList = [];
+class Program {
+    constructor(date) {
+        this.date = date;
+        this.movieList = [];
+    }
 }
 
 var allPrograms = [];
 
 // button CREATE PROGRAM   
-document.querySelector('#button2').addEventListener('click', createProgram);
+$('#button2').on('click', createProgram);
 
 function createProgram(event) {
 
-    var date = document.querySelector('#date').value;
+    let date = $('#date').val();
 
     //validation
-    var error4 = document.querySelector('#error4');
+    let error4 = $('#error4');
     if (date === "") {
-        error4.textContent = 'Please choose date';
+        error4.text('Please choose date');
         return false;
     } else {
-        error4.textContent = '';
+        error4.text('');
     }
 
     // create li for program
-    var newLi = document.createElement('li');
-    var liText = document.createTextNode(date + ', duration: TBA');
-    newLi.appendChild(liText);
-    var list = document.querySelector('#programList');
-    list.appendChild(newLi);
+    let newLi = $('<li>');
+    newLi.text(`${date}, duration: TBA`);
+    $('#programList').append(newLi);
 
     // make program object
-    var program = new Program(date);
+    let program = new Program(date);
     allPrograms.push(program);
 
     // create program dropdown
-    var numOfPrograms = allPrograms.length;
+    let numOfPrograms = allPrograms.length;
 
-    var newP = document.createElement("option");
-    var optValue = allPrograms[numOfPrograms-1].date;
-    var optText = document.createTextNode(optValue);
-    newP.appendChild(optText);
-    var selectProgram = document.querySelector("#program");
-    selectProgram.appendChild(newP);
+    let newP = $("<option>");
+    // let optValue = allPrograms[numOfPrograms - 1].date;
+    // let optText = document.createTextNode(optValue);
+    newP.text(allPrograms[numOfPrograms - 1].date);
+    $("#program").append(newP);
 
 }
 
 // button ADD MOVIE
-document.querySelector('#button3').addEventListener('click', addMovie);
+$('#button3').on('click', addMovie);
 
-function addMovie(event){
+function addMovie(event) {
+    // let select = $('#genre option:selected').val();
 
-    var selectP = document.querySelector('#program');
-    var optionP = selectP.selectedIndex;// program index in select list
-
-    var pDate = allPrograms[optionP-1].date;  // program date
+    let selectP = $('#program option:selected').val();
+    // const selectedIndex = $('#genre').prop('selectedIndex');
+    let optionP = $('#program').prop('selectedIndex');// program index in select list
+    // console.log(optionP);
     
-    var selectM = document.querySelector('#movie');
-    var optionM = selectM.selectedIndex;
-    
+    let pDate = allPrograms[optionP - 1].date;  // program date
+
+    let selectM = $('#movie option:selected').val();
+    let optionM = $('#movie').prop('selectedIndex');
+
     allPrograms[optionP - 1].movieList.push(allMovies[optionM - 1]);  // add movie to program
 
-    var pMovies = allPrograms[optionP - 1].movieList.length;  // num of movies for that program
+    let pMovies = allPrograms[optionP - 1].movieList.length;  // num of movies for that program
 
     // all length minutes
-    var totalLengthP = 0;
-    for (var i = 0; i < pMovies; i++) {
-        var n = Number(allPrograms[optionP - 1].movieList[i].movieLength);
+    let totalLengthP = 0;
+    for (let i = 0; i < pMovies; i++) {
+        let n = Number(allPrograms[optionP - 1].movieList[i].movieLength);
         totalLengthP += n;
     }
 
     //update program data
-    var selector = '#programList li:nth-child(' + optionP + ')';
-    var programComplete = document.querySelector(selector);
-    programComplete.innerHTML = pDate + ', ' + pMovies + ' movies, duration: ' + totalLengthP + 'min';
+    $(`#programList li:nth-child(${optionP})`).text(`${pDate}, ${pMovies} movies, duration: ${totalLengthP} min`);
 
 }
