@@ -14,9 +14,20 @@ const dataModule = (function () {
         allShows.push(TVShow);
         return TVShow;
     }
+    //-----------------------------------------------
+
+    function searchedShows(showsData) {
+        return showsData.map(function (showWrap) {
+            const { show } = showWrap;
+            return new TVShows(show.id, show.name, show.image);
+        })
+    }
+
 
     return {
         createTVShows,
-        allShows
+        searchedShows,
+        allShows,
+        
     }
 })();

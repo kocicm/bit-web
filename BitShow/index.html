@@ -17,7 +17,13 @@
         <div class="container">
             <span>BitShow</span>
             <form>
-                <input type="search" name="search" placeholder="Search for shows">
+                <div class="dropdown">
+
+                    <input  type="search" placeholder="Search" id="myInput">
+                    <div id="myDropdown" class="dropdown-content">
+
+                    </div>
+                </div>
             </form>
         </div>
     </header>
@@ -50,6 +56,12 @@
     <script type="text/javascript" src="js/dataModule.js"></script>
     <script type="text/javascript" src="js/UIModule.js"></script>
     <script type="text/javascript" src="js/mainModule.js"></script>
+    <script>
+        mainModule.searched();
+        mainModule.myFunction();
+        mainModule.allShows();
+        mainModule.switchToSingleShow();
+    </script>
 </body>
 
 </html>
