@@ -33,7 +33,7 @@ const UIModule = (function () {
 
     function displayCast(person){
 
-        console.log(person);
+        // console.log(person);
         
         let li = $(`<li>${person.name}</li>`);
         $('#cast').append(li);
